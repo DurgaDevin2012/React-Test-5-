@@ -1,0 +1,271 @@
+		React test-(13/10/2023)
+
+1)What is react?
+
+Answer: 	React is a open-source JS library.
+		React is a single-page web application
+		React publise in 2013
+		React developed by Jordan Walke.
+
+		-------------------------------
+
+2) What are the advantages of using React?
+
+Answer: *Code reusable
+	*Single-Page web application
+	*Cost effective
+	*It is Simple.
+	*Virtual DOM.
+	*JSX.
+
+			-------------------------
+
+3)What is JSX?
+
+Answer:	JSX-Javascript Syntax Extension
+	JSX is a combination of HTML and Javascript.
+	We can create an element  inside the Javascript object.
+
+			------------------------
+
+4) What are keys in React?
+
+Answer:
+	A “key” is a special string attribute you
+ need to include when creating lists of elements in React.
+
+			---------------------
+
+5)What is React-Components?
+
+Answer:	Components are independent and reusable bits of code.There are two types 
+of component.They are,
+		* Funtion component and
+		* class component.
+
+		--------------------------
+
+6)What is classComponent and functionalComponent differnce?
+
+Answer:
+	FUNCTION COMPONENT:
+A functional component is just a plain JavaScript pure function that 
+accepts props as an argument and returns a React element(JSX).
+
+	CLASS COMPONENT:
+A class component requires you to extend from React. Component
+ and create a render function that returns a React element.
+
+		---------------------------
+
+7)What is Constructor?
+
+Answer:Constructor is a method that's automatically called
+ during the creation of an object from a class.
+
+		-----------------------
+
+8)What is super keyword?
+
+Answer:			Super() function is to call
+ 	the constructor of the parent class.
+
+		----------------------
+
+9) what is render function?
+
+Answer:		to represent the imposed HTML 
+	code within the specified HTML element tags.
+
+		----------------------
+
+10) How to change of state value?
+
+Answer:		To change a value in the state object, 
+	use the this. setState() method.
+
+		------------------------
+
+11)What is use of Life Cyle Methods?
+
+Answer:		 allow you to control the component's behavior and
+ perform specific actions at different stages of its lifecycle.
+
+		---------------------
+
+12) List of Life Cycle Methods?
+
+Answer:		*componentDidMount()
+		*shouldComponentUpdate()
+		*componentWillunmount()
+		*componentWillUpdate()
+		*componentDidUpdate()
+
+			------------------------
+
+13) What is use of useEffect?
+
+Answer:		The useEffect Hook allows you 
+	to perform side effects in your components.
+
+		---------------------
+
+14) What are props in React?
+
+Answer:		React allows us to pass information
+	 to a Component using something called props.
+
+			------------------
+
+15) What is prop drilling in React?
+
+
+Answer:		Prop drilling occurs when a parent component passes 
+	data down to its children and then those children pass the
+	 same data down to their own children.
+
+		----------------------
+
+16) What is React Hooks?
+
+Answer:		Hooks are used to give functional components an
+	 access to use the states and are used to manage side-effects in React. 
+	They were introduced React 16.8.
+
+			----------------------
+
+17)What is React Hooks list?
+
+Answer: 	*useEffect()
+		*useState()
+		*useReducer()
+		*useDispatch()
+		*useSelector()
+
+		-----------------------------
+
+18)What are the different ways to style a React component?
+
+Answer:		*Inline style,
+		*Internal style,
+		*External style.
+
+		--------------------------
+
+19) How do you handle events in React?
+
+Answer: 	*onClick()
+		*onChange()
+		*onSubmit()
+
+		------------------------
+
+20) How can you update the State of a component?
+
+Answer:		Whenever we update the state using the setState() 
+	method it re-renders the current component and 
+its child components.
+
+			---------------------
+
+21) What is React Router?
+
+Answer:		React Router is a library for handling routing and navigation in 
+	React applications.
+
+	It allows you to create single-page applications with different
+ views and URLs, providing a smooth and consistent user experience.
+
+		---------------------------
+
+22) How to use of BrowserRouter?
+
+Answer:		BrowserRouter is a parent component and can have only
+ one child. Links: Let us now create the links of our components.
+
+	The Link component uses props to describe
+ the location to which the link should navigate.
+
+	Now, run your application on the local host and click on the 
+link created.
+
+			-------------------
+
+23) How to use of Routes & Links?
+
+Answer:		React Router provides the Route component for defining
+ routes and the Link component for navigating between different views.
+	Example:
+		import { Link } from 'react-router-dom';
+		<Link to="/about">About</Link>
+
+			-------------------
+	
+24) What is the use of useParams & useSearchParams?
+
+Answer:	
+	useParams: 
+		This hook from React Router allows you to access the 
+parameters from the URL, useful for dynamic routing.
+
+	useSearchParams:
+		 It allows you to access and manipulate.
+
+			------------------------
+
+25)What is React context? How to createContext?
+
+Answer:	
+	React context is a way to pass data through the 
+component tree without having to pass props down manually at every 
+level.
+	It provides a way to share values like themes, language 
+preferences, or user authentication status with all components in the
+ tree. 
+	You can create a context using the createContext function from React.
+		
+		import React, { createContext } from 'react';		
+		const MyContext = createContext();	
+
+			----------------------
+
+26)What is the use of Provider & dispatch method?
+
+Answer:		In the context API, the Provider component is used to 
+	wrap the part of the component tree where you want to make 
+	the context available.
+
+	The dispatch method is not a standard part of the context API but is comm
+only used in conjunction with state management libraries like Redux.
+
+			-------------------------
+
+27)What is Read in Context values?
+
+ANswer:		To read the values from a context, you can use the 
+useContext hook in functional components or access the context in class components via the Consumer.
+	
+	For example, with the useContext hook:
+		import { useContext } from 'react';
+		const contextValue = useContext(MyContext);
+		
+			--------------------------
+
+28) How can we pass props from Child to Parent?
+Answer:
+	Create a callback method. This method will get the data from 
+the Child to Parent.
+	Pass your data as props in Child. The Child will call the 
+Parent callback using props.
+	The callback method in the Parent will act as prop to the 
+Child component.
+
+			----------------------
+
+29. How can we pass props from Parent to Child?
+
+Answer:
+	Passing props from a parent component to a child component in 
+React is the standard way to share data.
+	Simply provide the child component with the necessary props 
+-----------------------------------------------------------------------
